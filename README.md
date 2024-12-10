@@ -5,11 +5,11 @@ This project is a bit old, but could be easily refactored (minus the API wrapper
 
 The project abstracts a few different things, namely
 
-Quoter - A class for wrapping real-time websockets Bid/Ask from arbitrary exchanges, as well as historical quoters for OHLC data points
-Trader - Abstract class for executing orders, including autoconverting available balances into necessary asset for pair trading using a 'conversion graph'
-Indicators - A suite of my favorite indicators, including complex ones like Harmonic indicators and Demark indicators
-Risk Management - A position sizer for calculating safe margin sizing with fixed risk
-ML - machine learning model ensembler for optimizing classical trading strategies
+1. Quoter - A class for wrapping real-time websockets Bid/Ask from arbitrary exchanges, as well as historical quoters for OHLC data points
+2. Trader - Abstract class for executing orders, including autoconverting available balances into necessary asset for pair trading using a 'conversion graph'
+3. Indicators - A suite of my favorite indicators, including complex ones like Harmonic indicators and Demark indicators
+4. Risk Management - A position sizer for calculating safe margin sizing with fixed risk
+5. ML - machine learning model ensembler for optimizing classical trading strategies
 
 ## Some Interesting Directories
 
