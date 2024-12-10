@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for price history",
+    "properties" : {
+        "timescale" : {"type" : "string"},
+        "instrument" : {"type" : "string"},
+        "price_history" : {
+            "type" : "array",
+            "items" : {
+                "type" : "object",
+                "candle" : {
+                    "type" : "object",
+                    
+                    "properties" : {
+                        "timestamp" : {"type" : "string"},
+                        "volume" : {"type" : "number"},
+                        "open" : {"type" : "number"},
+                        "high" : {"type": "number"},
+                        "low" : {"type" : "number"},
+                        "close" : {"type" : "number"}
+                    },
+                    "required" : ["timestamp", "volume" , "open" , "high", "low", "close"]
+                },
+                "indicators" : {
+                    "type" : "object",
+                    "properties" : {
+                        "demarkcountdown" : {
+                            "type" : "object",
+                            "properties" : {
+                                "aggressive_type": {
+                                    "type" : "string",
+                                    "enum" : ["BUY", "SELL", "None"]
+                                },
+                                "combo_type": {
+                                    "type" : "string",
+                                    "enum" : ["BUY", "SELL", "None"]
+                                },
+                                "countdown_index": {"type" :"number"},
+                                "countdown_type": {
+                                    "type" : "string",
+                                    "enum" : ["BUY", "SELL", "None"]
+                                },
+                                "is_aggressive_bar_13": {"type" : "boolean"},
+                                "is_combo_bar_13":  {"type" : "boolean"},
+                                "setup_index": {"type" :"number"},
+                                "setup_type": {
+                                    "type" : "string",
+                                    "enum" : ["BUY", "SELL", "None"]
+                                },
+                                "tdst_resistance": {"type" :"number"},
+                                "tdst_support": {"type" :"number"},
+                                "timestamp": {"type" :"number"},
+                                "perl_perfection" : {"type" : "boolean"}
+                            }
+                        }
+                    }
+                },
+                "required": ["candle"]
+            }
+            
+        }
+    },
+    "required" : ["timescale", "instrument" , "price_history"]
+  }

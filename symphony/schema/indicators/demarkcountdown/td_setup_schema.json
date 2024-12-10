@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for setups",
+    "properties" : {
+        "sell_setups" : {"type" : "array"},
+        "sell_setups_true_end" : {"type" : "array"},
+        "perfect_sell_setups" : {"type" : "array"},
+        "tdst_support" : {"type" : "array"},
+        "buy_setups" : {"type" : "array"},
+        "buy_setups_true_end" : {"type" : "array"},
+        "perfect_buy_setups" : {"type" : "array"},
+        "tdst_resistance" : {"type" : "array"}
+    },
+    "required" : ["sell_setups", "sell_setups_true_end", "perfect_sell_setups", "tdst_support", "buy_setups", "buy_setups_true_end", "perfect_buy_setups", "tdst_resistance"]
+  }

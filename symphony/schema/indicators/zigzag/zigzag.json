@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for ZigZag",
+    "properties" : {
+        "zigzag_up" : {"type" : "array"},
+        "zigzag_down" : {"type" : "array"}
+    },
+    "required" : ["zigzag_up", "zigzag_down"]
+  }

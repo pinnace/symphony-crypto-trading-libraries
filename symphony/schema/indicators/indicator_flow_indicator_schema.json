@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for an indicator in indicator flow item",
+    "properties" : {
+        "name" : {"type" : "string" },
+        "settings" : { "type" : "object"},
+        "data" : {
+            "type" : "object",
+            "properties" : {
+                "channel_n" : {"type" : "array"}
+            }
+        }
+    
+    },
+    "required": ["name","settings", "data"]
+  }

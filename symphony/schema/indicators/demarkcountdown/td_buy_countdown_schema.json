@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for buy countdown",
+    "properties" : {
+        "bearish_price_flips" : {"type" : "array"},
+        "buy_setups" : {"type" : "array"},
+        "buy_setups_true_end" : {"type" : "array"},
+        "perfect_buy_setups" : {"type" : "array"},
+        "tdst_resistance" : {"type" : "array"},
+        "active_buy_setups" : {"type" : "array"},
+        "buy_countdowns" : {"type" : "array"}
+    },
+    "required" : ["bearish_price_flips", "buy_setups", "buy_setups_true_end", "perfect_buy_setups", "tdst_resistance", "active_buy_setups", "buy_countdowns"]
+  }

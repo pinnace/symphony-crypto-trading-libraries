@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for price history item",
+    "properties" : {
+        "candle" : {
+            "type" : "object",
+            "properties": {
+                "timestamp" : {"type" : ["number", "null"]},
+                "volume" : {"type" : ["number", "null"]},
+                "open" : {"type" : ["number", "null"]},
+                "high" : {"type": ["number", "null"]},
+                "low" : {"type" : ["number", "null"]},
+                "close" : {"type" : ["number", "null"]}
+            },
+            "required" : ["timestamp", "volume" , "open" , "high", "low", "close"]
+        },
+        "comment" : {"type" : "string"}
+    }
+    
+  }

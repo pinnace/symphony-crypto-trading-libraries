@@ -1,0 +1,47 @@
+//@version=4
+strategy("backtest-2021-07-07T21-32-19", overlay=true, initial_capital=10000, commission_type=strategy.commission.percent, commission_value=0.2)
+
+strategy.order("0", 1, 1661.29413801, 1.98356, when = time_close == 1622149200000)
+strategy.close("0", when = time_close == 1622160000000)
+
+strategy.order("1", 1, 1771.43167814, 0.88155, when = time_close == 1621764000000)
+strategy.close("1", when = time_close >= 1621815660000 and time_close - 1621819260000 < 3600000)
+
+strategy.order("2", 1, 641.30714436, 1.83289, when = time_close == 1621555200000)
+strategy.close("2", when = time_close >= 1621628040000 and time_close - 1621631640000 < 3600000)
+
+strategy.order("3", 1, 294.23920392, 1.61507, when = time_close == 1621479600000)
+strategy.close("3", when = time_close >= 1621490580000 and time_close - 1621494180000 < 3600000)
+
+strategy.order("4", 1, 2124.70178053, 1.56271, when = time_close == 1621191600000)
+strategy.close("4", when = time_close >= 1621209180000 and time_close - 1621212780000 < 3600000)
+
+strategy.order("5", 1, 1596.23191873, 1.60816, when = time_close == 1621126800000)
+strategy.close("5", when = time_close >= 1621145460000 and time_close - 1621149060000 < 3600000)
+
+strategy.order("6", 1, 4894.80826301, 0.74595, when = time_close == 1620439200000)
+strategy.close("6", when = time_close >= 1620484620000 and time_close - 1620488220000 < 3600000)
+
+strategy.order("7", 1, 2537.52506038, 0.33523, when = time_close == 1619143200000)
+strategy.close("7", when = time_close >= 1619219760000 and time_close - 1619223360000 < 3600000)
+
+strategy.order("8", 1, 11549.31732888, 0.33004, when = time_close == 1618851600000)
+strategy.close("8", when = time_close >= 1618901700000 and time_close - 1618905300000 < 3600000)
+
+strategy.order("9", 1, 886.92223983, 0.35807, when = time_close == 1618732800000)
+strategy.close("9", when = time_close == 1618783200000)
+
+strategy.order("10", 1, 16333.85384736, 0.39981, when = time_close == 1618682400000)
+strategy.close("10", when = time_close >= 1618715880000 and time_close - 1618719480000 < 3600000)
+
+strategy.order("11", 1, 5046.7436263, 0.38981, when = time_close == 1618416000000)
+strategy.close("11", when = time_close >= 1618445520000 and time_close - 1618449120000 < 3600000)
+
+strategy.order("12", 1, 10095.75450752, 0.35671, when = time_close == 1618092000000)
+strategy.close("12", when = time_close >= 1618174140000 and time_close - 1618177740000 < 3600000)
+
+strategy.order("13", 1, 2868.29783282, 0.34057, when = time_close == 1617807600000)
+strategy.close("13", when = time_close >= 1617990480000 and time_close - 1617994080000 < 3600000)
+
+strategy.order("14", 1, 28530.68312284, 0.3484, when = time_close == 1617602400000)
+strategy.close("14", when = time_close >= 1617620820000 and time_close - 1617624420000 < 3600000)

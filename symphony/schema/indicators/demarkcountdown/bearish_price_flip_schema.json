@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for bearish price flips",
+    "properties" : {
+        "bearish_price_flips" : {"type" : "array"}
+    },
+    "required" : ["bearish_price_flips"]
+  }

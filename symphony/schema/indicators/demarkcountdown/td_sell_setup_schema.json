@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for sell setups",
+    "properties" : {
+        "sell_setups" : {"type" : "array"},
+        "sell_setups_true_end" : {"type" : "array"},
+        "perfect_sell_setups" : {"type" : "array"},
+        "tdst_support" : {"type" : "array"}
+    },
+    "required" : ["sell_setups", "sell_setups_true_end", "perfect_sell_setups", "tdst_support"]
+  }

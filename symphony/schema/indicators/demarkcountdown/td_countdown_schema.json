@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for countdown indicator",
+    "properties" : {
+        "bearish_price_flips" : {"type" : "array"},
+        "buy_setups" : {"type" : "array"},
+        "buy_setups_true_end" : {"type" : "array"},
+        "perfect_buy_setups" : {"type" : "array"},
+        "tdst_resistance" : {"type" : "array"},
+        "active_buy_setups" : {"type" : "array"},
+        "buy_countdowns" : {"type" : "array"},
+        "bullish_price_flips" : {"type" : "array"},
+        "sell_setups" : {"type" : "array"},
+        "sell_setups_true_end" : {"type" : "array"},
+        "perfect_sell_setups" : {"type" : "array"},
+        "tdst_support" : {"type" : "array"},
+        "active_sell_setups" : {"type" : "array"},
+        "sell_countdowns" : {"type" : "array"}
+    },
+    "required" : ["bearish_price_flips", "buy_setups", "buy_setups_true_end", "perfect_buy_setups", "tdst_resistance", "active_buy_setups", "buy_countdowns","bullish_price_flips", "sell_setups", "sell_setups_true_end", "perfect_sell_setups", "tdst_support", "active_sell_setups", "sell_countdowns"]
+  }

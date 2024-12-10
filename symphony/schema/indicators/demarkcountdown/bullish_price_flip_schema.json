@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for bullish price flips",
+    "properties" : {
+        "bullish_price_flips" : {"type" : "array"}
+    },
+    "required" : ["bullish_price_flips"]
+  }

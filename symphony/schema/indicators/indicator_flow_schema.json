@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title" : "Schema for an indicator flow",
+    "properties" : {
+        "instrument" : {"type": "string"},
+        "timeframe" : {"type": "string"},
+        "digits" : {"type": "integer"},
+        "price_history" : {
+            "type" : "array",
+            "properties" : {
+                "open" : {"type" : "number" },
+                "high" : {"type" : "number" },
+                "low" : {"type" : "number" },
+                "close" : {"type" : "number" },
+                "volume" : { "type" : "number"},
+                "timestamp" : { "type" : "number"}
+            }
+            
+        },
+        "indicators" : { 
+            "type" : "array",
+            "properties": {
+                "name" : { "type" : "string"},
+                "settings" : { 
+                    "type" : "object",
+                    "properties": {
+                        "window_size" : { "type" : "integer" }
+                    }
+                
+                },
+                "data" : {
+                    "type" : "object",
+                    "properties" : {
+                        "channel_1" : {"type" : "array"},
+                        "channel_2" : {"type" : "array"},
+                        "channel_n" : {"type" : "array"}
+                    },
+                    "required": ["channel_1"]
+                }
+            },
+            "required": ["name", "settings", "data"]
+        }
+    },
+    "required": ["price_history", "instrument", "timeframe", "digits"]
+  }

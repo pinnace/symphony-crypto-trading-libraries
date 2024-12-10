@@ -160,3 +160,32 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+*.pyc
+data/
+.DS_Store
+.ipynb_checkpoints
+*.swp
+__pycache__/
+notebooks/ModelTuning
+notebooks/.ipynb_checkpoints
+notebooks/untitled_project
+.vscode/
+*.pyc
+symphony/backtest/storage/temp/
+symphony.egg-info/
+venv/
+/data/
+.DS_Store
+.ipynb_checkpoints
+*.swp
+__pycache__/
+notebooks/ModelsOld/ModelTuning
+notebooks/.ipynb_checkpoints
+notebooks/ModelsOld/untitled_project
+config.ini
+*.dump
+symphony/ml/models/
+symphony/ml/wandb/
+symphony/ml/meta_model_test_data_numeric.sframe/
+symphony/ml/meta_model_train_data_numeric.sframe/
