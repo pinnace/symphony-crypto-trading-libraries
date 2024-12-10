@@ -1,5 +1,5 @@
 # Crypto Trading Libraries + ML
-Personal trading libraries, fit with my favorite indicators calculated over DataFrames
+Personal automated trading libraries, fit with my favorite indicators calculated over DataFrames and sprinkled with a bit of ML
 
 This project is a bit old, but could be easily refactored (minus the API wrappers, as the interfaces have changed)
 
@@ -14,6 +14,8 @@ ML - machine learning model ensembler for optimizing classical trading strategie
 ## Some Interesting Directories
 
 ### Indicators
+
+[Supported Indicators](https://github.com/pinnace/symphony-crypto-trading-libraries/blob/main/symphony/indicator_v2/indicator_registry.py)
 
 [indicators](https://github.com/pinnace/symphony-crypto-trading-libraries/tree/main/symphony/indicator_v2)
 
