@@ -26,4 +26,4 @@ Many indicators. Volatility, various oscillators, candlestick patterns, ZigZag, 
 
 [models](https://github.com/pinnace/symphony-crypto-trading-libraries/tree/main/symphony/ml)
 
-Experiments with model ensembling using Boosted Trees, Random Forests, and simple neural networks to predict local minima and maxima
+Experiments with model ensembling using Boosted Trees, Random Forests, and simple neural networks to predict local inflection points for swing trading
